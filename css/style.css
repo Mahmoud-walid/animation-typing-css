@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.d_grid{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.d_grid .text{
+    font-family: monospace;
+    font-size: 300%;
+    animation:  typing 4.5s steps(32), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    width: 32ch;
+    border-right: 3px solid;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
